@@ -1,0 +1,144 @@
+{
+    "person_in_charge": "Reza",
+    "date_quality_check": "2025-02-16 22:09:31.530729",
+    "result": {
+        "products": {
+            "missing_values": {
+                "product_id": 0,
+                "product_name": 0,
+                "category": 0,
+                "unit_price": 0,
+                "cost_price": 0,
+                "in_stock": 0,
+                "created_at": 0
+            },
+            "date_validity": {},
+            "numeric_validity": {
+                "unit_price": {
+                    "false": 54
+                },
+                "cost_price": {
+                    "false": 54
+                }
+            },
+            "negative_validity": {
+                "unit_price": 2,
+                "cost_price": 3
+            }
+        },
+        "inventory_tracking": {
+            "missing_values": {
+                "tracking_id": 0,
+                "product_id": 0,
+                "quantity_change": 0,
+                "change_date": 0,
+                "reason": 0,
+                "created_at": 0
+            },
+            "date_validity": {
+                "change_date": {
+                    "True": 162
+                }
+            },
+            "numeric_validity": {
+                "quantity_change": {
+                    "true": 162
+                }
+            },
+            "negative_validity": {
+                "quantity_change": 0
+            }
+        },
+        "orders": {
+            "missing_values": {
+                "order_id": 0,
+                "employee_id": 0,
+                "customer_id": 250,
+                "order_date": 0,
+                "total_amount": 0,
+                "payment_method": 0,
+                "order_status": 0,
+                "created_at": 0
+            },
+            "date_validity": {
+                "order_date": {
+                    "True": 1010
+                }
+            },
+            "numeric_validity": {
+                "total_amount": {
+                    "true": 1010
+                }
+            },
+            "negative_validity": {
+                "total_amount": 0
+            }
+        },
+        "order_details": {
+            "missing_values": {
+                "order_detail_id": 0,
+                "order_id": 0,
+                "product_id": 0,
+                "quantity": 0,
+                "unit_price": 0,
+                "subtotal": 0,
+                "created_at": 0
+            },
+            "date_validity": {},
+            "numeric_validity": {
+                "unit_price": {
+                    "true": 3022
+                },
+                "quantity": {
+                    "true": 3022
+                },
+                "subtotal": {
+                    "true": 3022
+                }
+            },
+            "negative_validity": {
+                "unit_price": 0,
+                "quantity": 0,
+                "subtotal": 0
+            }
+        },
+        "customers": {
+            "missing_values": {
+                "customer_id": 0,
+                "first_name": 0,
+                "last_name": 0,
+                "email": 0,
+                "phone": 4,
+                "loyalty_points": 0,
+                "created_at": 0
+            },
+            "date_validity": {},
+            "numeric_validity": {
+                "loyalty_points": {
+                    "true": 204
+                }
+            },
+            "negative_validity": {
+                "loyalty_points": 8
+            }
+        },
+        "employees": {
+            "missing_values": {
+                "employee_id": 0,
+                "first_name": 0,
+                "last_name": 0,
+                "hire_date": 0,
+                "role": 0,
+                "email": 0,
+                "created_at": 0
+            },
+            "date_validity": {
+                "hire_date": {
+                    "True": 103
+                }
+            },
+            "numeric_validity": {},
+            "negative_validity": {}
+        }
+    }
+}

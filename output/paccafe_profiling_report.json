@@ -1,0 +1,129 @@
+{
+    "person_in_charge": "Reza",
+    "date_profiling": "2025-02-16 22:22:14.588733",
+    "result": {
+        "products": {
+            "shape": [
+                54,
+                7
+            ],
+            "data_types": {
+                "product_id": "int64",
+                "product_name": "object",
+                "category": "object",
+                "unit_price": "object",
+                "cost_price": "object",
+                "in_stock": "bool",
+                "created_at": "datetime64[ns]"
+            },
+            "unique_values": {
+                "category": [
+                    "Pastry",
+                    "Salad",
+                    "Smoothie",
+                    "Sandwich",
+                    "Coffee",
+                    "Tea"
+                ]
+            }
+        },
+        "inventory_tracking": {
+            "shape": [
+                162,
+                6
+            ],
+            "data_types": {
+                "tracking_id": "int64",
+                "product_id": "int64",
+                "quantity_change": "int64",
+                "change_date": "datetime64[ns]",
+                "reason": "object",
+                "created_at": "datetime64[ns]"
+            },
+            "unique_values": {}
+        },
+        "orders": {
+            "shape": [
+                1010,
+                8
+            ],
+            "data_types": {
+                "order_id": "int64",
+                "employee_id": "int64",
+                "customer_id": "float64",
+                "order_date": "datetime64[ns]",
+                "total_amount": "float64",
+                "payment_method": "object",
+                "order_status": "object",
+                "created_at": "datetime64[ns]"
+            },
+            "unique_values": {
+                "payment_method": [
+                    "Cash",
+                    "Credit Card",
+                    "Debit Card",
+                    "ERROR"
+                ]
+            }
+        },
+        "order_details": {
+            "shape": [
+                3022,
+                7
+            ],
+            "data_types": {
+                "order_detail_id": "int64",
+                "order_id": "int64",
+                "product_id": "int64",
+                "quantity": "int64",
+                "unit_price": "float64",
+                "subtotal": "float64",
+                "created_at": "datetime64[ns]"
+            },
+            "unique_values": {}
+        },
+        "customers": {
+            "shape": [
+                204,
+                7
+            ],
+            "data_types": {
+                "customer_id": "int64",
+                "first_name": "object",
+                "last_name": "object",
+                "email": "object",
+                "phone": "object",
+                "loyalty_points": "int64",
+                "created_at": "datetime64[ns]"
+            },
+            "unique_values": {}
+        },
+        "employees": {
+            "shape": [
+                103,
+                7
+            ],
+            "data_types": {
+                "employee_id": "int64",
+                "first_name": "object",
+                "last_name": "object",
+                "hire_date": "object",
+                "role": "object",
+                "email": "object",
+                "created_at": "datetime64[ns]"
+            },
+            "unique_values": {
+                "role": [
+                    "Cashier",
+                    "Waitress",
+                    "Manager",
+                    "Waiter",
+                    "Barista",
+                    "today",
+                    "third",
+                    "me"
+                ]
+            }
+        }
+    }
+}
